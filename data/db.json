@@ -65,6 +65,32 @@
       "avtor": "Shohijahon Musinkulov",
       "date": "16.04.2023-12:41 Create-At it's product",
       "id": 4
+    },
+    {
+      "name": "Doston",
+      "disc": "usha gap",
+      "type": "ayol",
+      "image": "https://picsum.photos/200/200",
+      "price": 1000,
+      "ulcham": "s",
+      "telnumber": 998996785544,
+      "user_id": 2,
+      "avtor": "Doston Qudratov",
+      "date": "16.04.2023-15:9 Create-At it's product",
+      "id": 5
+    },
+    {
+      "name": "Ayol",
+      "disc": "yana usha gap",
+      "type": "ayol",
+      "image": "https://picsum.photos/200/200",
+      "price": 1000,
+      "ulcham": "xl",
+      "telnumber": 998991456677,
+      "user_id": 2,
+      "avtor": "Doston Qudratov",
+      "date": "16.04.2023-15:33 Create-At it's product",
+      "id": 6
     }
   ],
   "order": [],

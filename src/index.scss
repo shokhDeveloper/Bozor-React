@@ -955,7 +955,7 @@ footer{
     width: 100%;
     padding-top: 0.5rem;
 }
-.akkaunt_page form input, .erkaklar_seach_input{
+.akkaunt_page form input, .erkaklar_seach_input, .ayollar_search_input{
     margin: 1rem 0rem;
     padding: 0.5rem 1rem;
     width: 100%;
@@ -993,7 +993,7 @@ footer{
     @include between;
     flex-wrap: wrap;
 }
-.my_products .tovar, .tovar_page_tovars .tovar, .erkaklar_align .tovar{
+.my_products .tovar, .tovar_page_tovars .tovar, .erkaklar_align .tovar, .ayollar_align .tovar{
     width: 25%;
     background: $grey_color;
     padding: 1rem;
@@ -1003,17 +1003,17 @@ footer{
     color: #000;
     text-align: center;
 }
-.my_products .tovar img, .tovar_page_tovars .tovar img, .erkaklar_align .tovar img{
+.my_products .tovar img, .tovar_page_tovars .tovar img, .erkaklar_align .tovar img, .ayollar_align .tovar img{
     width: 100%;
 }
 
-.my_products .tovar p:nth-child(1), .tovar_page_tovars .tovar p:nth-child(1), .erkaklar_align .tovar p:nth-child(1){
+.my_products .tovar p:nth-child(1), .tovar_page_tovars .tovar p:nth-child(1), .erkaklar_align .tovar p:nth-child(1), .ayollar_align .tovar p:nth-child(1){
     font-size: 20px;
     font-family: "Bold";
     font-weight: 800;
     text-align: center;
 }
-.my_products .tovar p, .tovar_page_tovars .tovar p, .erkaklar_align .tovar p{
+.my_products .tovar p, .tovar_page_tovars .tovar p, .erkaklar_align .tovar p, .ayollar_align .tovar p{
     padding: 1rem 0rem;
     text-align: center;
 }
@@ -1254,7 +1254,7 @@ footer{
     padding-bottom: 0.5rem;
     border-bottom: 2px solid black;
 }
-.kategory_select, #erkak_sort{
+.kategory_select, #erkak_sort, .ayollar_select_filter, .ayollar_select_sort{
     flex-basis: 30%;
     background: $grey_color;
     font-family: "Bold";
@@ -1273,7 +1273,7 @@ footer{
 .erkaklar_search{
     @include between;
 }
-.erkaklar_search input{
+.erkaklar_search input, .ayollar_search_input{
     width: auto;    
     flex-basis: 30%;
     margin-top: 1.5rem;
@@ -1300,10 +1300,18 @@ footer{
 .add_korzina_tovar_card{
     @include between;
 }
-.kategory select:nth-child(2){
+.kategory select:nth-child(2), .ayollar_search select:nth-child(2){
     flex-basis: 30%;
 }
 .settings_sotuvchi{
     width: 80%;
     @include around;
+}
+.ayollar_search{
+    @include between;
+}
+.ayollar_align {
+    width: 100%;
+    @include between;
+    flex-wrap: wrap;
 }
