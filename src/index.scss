@@ -614,17 +614,16 @@ header{
     display: flex;
     justify-content: end;
     text-align: end;
+    align-items: start;
 }
 .korzina_quti{
     width: 23%;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
     background: #fff;
     position: absolute;
     transform: translateX(100%);
     transition: 0.5s ease all;
-    align-items: start;
+
 }
 .active_korzina_modal{
     transform: translateX(0);
@@ -634,6 +633,7 @@ header{
     padding: 0.5rem;
     background: #E1AA00;
     @include end;
+
     width: 100%;
 }
 .korzina_quti_header button{
@@ -993,7 +993,7 @@ footer{
     @include between;
     flex-wrap: wrap;
 }
-.my_products .tovar, .tovar_page_tovars .tovar, .erkaklar_align .tovar, .ayollar_align .tovar{
+.my_products .tovar, .tovar_page_tovars .tovar, .erkaklar_align .tovar, .ayollar_align .tovar, .user_tovars .tovar{
     width: 25%;
     background: $grey_color;
     padding: 1rem;
@@ -1003,17 +1003,20 @@ footer{
     color: #000;
     text-align: center;
 }
-.my_products .tovar img, .tovar_page_tovars .tovar img, .erkaklar_align .tovar img, .ayollar_align .tovar img{
+.user_tovars .tovar{
+    width: 45%;
+}
+.my_products .tovar img, .tovar_page_tovars .tovar img, .erkaklar_align .tovar img, .ayollar_align .tovar img, .user_tovars .tovar img{
     width: 100%;
 }
 
-.my_products .tovar p:nth-child(1), .tovar_page_tovars .tovar p:nth-child(1), .erkaklar_align .tovar p:nth-child(1), .ayollar_align .tovar p:nth-child(1){
+.my_products .tovar p:nth-child(1), .tovar_page_tovars .tovar p:nth-child(1), .erkaklar_align .tovar p:nth-child(1), .ayollar_align .tovar p:nth-child(1), .user_tovars .tovar p:nth-child(1){
     font-size: 20px;
     font-family: "Bold";
     font-weight: 800;
     text-align: center;
 }
-.my_products .tovar p, .tovar_page_tovars .tovar p, .erkaklar_align .tovar p, .ayollar_align .tovar p{
+.my_products .tovar p, .tovar_page_tovars .tovar p, .erkaklar_align .tovar p, .ayollar_align .tovar p, .user_tovars  .tovar p{
     padding: 1rem 0rem;
     text-align: center;
 }
@@ -1314,4 +1317,127 @@ footer{
     width: 100%;
     @include between;
     flex-wrap: wrap;
+}
+.user{
+    width: 100%;
+    height: auto;
+}
+.user_align{
+    // display: grid;
+    // grid-template: repeat(1, auto) / repeat(2, 50%);
+    // justify-content: space-between;
+}
+.user{
+    background: $grey_color;
+    padding: 1rem;
+    align-items: start;
+    @include center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.user_text{
+    text-align: center;
+    @include around;
+    min-height: 50vh;
+    flex-direction: column;
+}
+.user_text p{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.user_tovars{
+    @include between;
+    flex-wrap: wrap;
+}
+.user_tovars .tovar{
+    width: 25%;
+}
+.user a{
+    text-decoration: none;
+}
+@media only screen and (max-width: 1400px){
+    .user_align{
+        display: block;
+        grid-template: repeat(2, auto) / repeat(1, 100%);   
+    }
+}
+.user_name_text{
+    display: flex;
+    align-items: center;
+}
+.user_name_text div:nth-child(2){
+    padding: 0.5rem;
+    background: aqua;
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+.korzina_quti_cards{
+    width: 100%;
+    padding: 0.5rem;
+    height: 80vh;
+    overflow: scroll;
+    text-align: center;
+    padding-top: 0.8rem;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.korzina_quti_card{
+    background: $grey_color;
+    padding: 0.5rem;
+    margin: 1rem 0rem;
+    text-align: center;
+}
+.korzina_quti_card p{
+    font-size: 20px;
+}
+.korzina_quti_card_btns{
+    padding-top: 1rem;
+    @include around;
+}
+.korzina_end_btns{
+    @include between;
+}
+.korzina_end_btns button{
+    margin-right: 0.3rem;
+}
+.hisob{
+    padding: 0.5rem;
+    color: #fff;
+    background: green;
+    text-decoration: none;
+    font-size: 16px;
+}
+.order_page{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.order_page_texts{
+    text-align: center;
+}
+.order_page_cards{
+    padding-top: 2rem;
+    @include between;
+    flex-wrap: wrap;
+}
+.order_card{
+    background: #fff;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+.order_card div{
+    padding: 0.5rem 0rem;
+}
+.order_card div:nth-child(2) p{
+    // @include around;
+    padding: 0.7rem 0rem;
+}
+.order_card div:nth-child(3){
+    @include around;
+}
+.order_card div:last-child{
+    @include around
 }

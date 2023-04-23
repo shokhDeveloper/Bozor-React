@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react"
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom"
-import { Context } from "./Settings"
+import { Context, getItem } from "./Settings"
 import Zvezda from "./Settings/assets/images/uch_yarim.png"
 import { Btn } from "./Settings/Styleds"
 import { Modal } from "./Settings/Modal"
@@ -12,8 +12,10 @@ import ShopOutlined from "@mui/icons-material/ShoppingCartOutlined"
 import * as Yup from "yup"
 import { useCart } from "react-use-cart"
 export const Tovar = ({name, image, disc, price, user_id, id, ulcham, type, telnumber, getProduct, item}) => {
+    console.log(item)
     const date = new Date()
     const cart = useCart()
+    console.log(cart)
     const {user}= useContext(Context)
     const [modal, setModal] = useState(!true)
     const navigate = useNavigate()
@@ -44,7 +46,7 @@ export const Tovar = ({name, image, disc, price, user_id, id, ulcham, type, teln
             const id = event.target.id-0
             mutation.mutate(id)
         }else if(event.target.matches(".add_korzina_tovar_card_btn")){
-            cart.addItem(item)
+            // cart.addItem(item)
         }else{
             navigate(`/tovar/${id}`)
         }   
@@ -74,6 +76,9 @@ export const Tovar = ({name, image, disc, price, user_id, id, ulcham, type, teln
     const onSubmit = event => {
         mutationUpdate.mutate(event)
     }
+    let local_tovar = getItem("react-use-cart")
+    let {items} =  local_tovar ? JSON.parse(local_tovar): []
+    console.log(items)
     watch()
     return(
         <>
@@ -91,7 +96,7 @@ export const Tovar = ({name, image, disc, price, user_id, id, ulcham, type, teln
                 <p >Sizning tovaringiz </p>    
             ):(
             <div className="add_korzina_tovar_card">
-                <Btn variant="green" onClick={() => cart.addItem(item)} className="add_korzina_tovar_card_btn">Korzinaga qo'shish <ShopOutlined style={{fontSize: "1em"}}/> </Btn>
+                <Btn variant="green" onClick={() => cart.addItem(item, 1)} className="add_korzina_tovar_card_btn">Korzinaga qo'shish <ShopOutlined style={{fontSize: "1em"}}/> </Btn>
                 <NavLink to={`/tovar/${id}`}>Batafsil</NavLink>
             </div>
             )}

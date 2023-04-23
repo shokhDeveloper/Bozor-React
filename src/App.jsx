@@ -1,7 +1,6 @@
 import {Routes, Route} from "react-router-dom"
 import { useContext } from "react";
-import { useRoutes } from "react-router-dom";
-import {Home} from "./Private";
+import {Home, Order} from "./Private";
 import {Home as NotHome, Login, Register} from "./Public";
 import {Context} from "./Settings"
 import { GlobalStyled } from "./Settings/Styleds/StyledComponents";
@@ -14,6 +13,7 @@ function App() {
             {token !== null? (
               <>
                 <Route path="/*" element={<Home/>}/>
+                <Route path="/order/:user/*" element={<Order/>}/>
               </>
             ):(
               <>

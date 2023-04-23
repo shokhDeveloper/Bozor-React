@@ -1,5 +1,5 @@
 import { useRoutes } from "react-router-dom"
-import {Glavni, O_nas, Kategory, Akkaunt} from "../Pages"
+import {Glavni, O_nas, Kategory, Akkaunt, Avtor} from "../Pages"
 import { Tovar_Page } from "../Pages/Tovar_Page"
 export const RoutesX = () => {
     const route = [
@@ -25,6 +25,10 @@ export const RoutesX = () => {
         },
         {   path: "/tovar/:id",
             element: <Tovar_Page/>
+        },
+        {
+            path: "/avtor/:id",
+            element: <Avtor/>
         }
     ]
     return useRoutes(route)

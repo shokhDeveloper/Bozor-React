@@ -5,6 +5,7 @@ export const GlobalStyled = createGlobalStyle`
        padding: 0;
        box-sizing: border-box;
        font-family: "Regular";
+       scroll-behavior: smooth;
 }
 .container_fluid{
     max-width: 90%;
@@ -36,7 +37,7 @@ const btn_settings = {
         background: "green",
         padding: "0.5rem 1rem",
         fontSize: "1.2rem"    
-    }
+    },
 }
 export const Btn = styled.button`
     background: ${({variant}) => btn_settings[variant].background};
@@ -45,6 +46,7 @@ export const Btn = styled.button`
     letter-spacing: 1px;
     border: 1px solid transparent;
     font-weight: 600;
+    color: ${({className, variant}) => className === "add_product_korzina" || className === "remove_product_korzina" ? "#fff": btn_settings[variant].color };
 `
 export const A = styled.a`
     background: ${({variant}) => btn_settings[variant].background};

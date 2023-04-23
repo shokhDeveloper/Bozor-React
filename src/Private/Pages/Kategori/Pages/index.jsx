@@ -1,3 +1,4 @@
 import { Erkaklar } from "./Erkaklar";
 import { Ayollar } from "./Ayollar";
-export {Erkaklar, Ayollar};
+import { Avtor } from "./Avtor";
+export {Erkaklar, Ayollar, Avtor};

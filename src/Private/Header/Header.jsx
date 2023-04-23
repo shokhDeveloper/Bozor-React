@@ -4,12 +4,15 @@ import {LanguageHeader} from "../../Public/LanguageHeader"
 import { Btn } from "../../Settings/Styleds/StyledComponents"
 import { ShoppingCartOutlined } from "@mui/icons-material"
 import { useCart } from "react-use-cart"
-import { useEffect, useRef, useState } from "react"
+import { useContext, useEffect, useRef, useState } from "react"
 import { Modal } from "../../Settings/Modal"
 import Burger from "../../Settings/assets/images/burger_menu.png";
 import BurgerX from "../../Settings/assets/images/X.png"
+import { Context } from "../../Settings"
+import { Korzina } from "../../Korzina"
 export const Header = () => {
-    const {totalItems} = useCart()
+    const {user} = useContext(Context)
+    const {totalItems, items, totalUniqueItems} = useCart()
     const [headerClass, setHeaderClass] = useState("header_public")
     const [korzinaOverlay, setKorzinaOverlay] = useState(!true)
     const [matches, setMatches] = useState(false)
@@ -52,6 +55,9 @@ export const Header = () => {
             }
         }(window.matchMedia("(max-width:1045px)")))
     },[window])
+    useEffect(() => {
+        window.localStorage.removeItem("react-use-cart")
+    },[user])
     return(
     <>
     <header style={{zIndex: 5, position: "fixed" }} className={headerClass}>
@@ -96,19 +102,7 @@ export const Header = () => {
                     <p className="korzina_number"><small>{totalItems === 0? totalItems: totalItems}</small></p>
                     <ShoppingCartOutlined className="shopping_icon"/>
                 </div>
-                <div className="karzina_overlay" style={{display: korzinaOverlay === true? "flex": "none"}}>
-                <div className="korzina_quti">
-                    <div className="korzina_quti_header">
-                        <button onClick={() => {
-                            let korzina_modal = document.querySelector(".korzina_quti")
-                            korzina_modal.classList.remove("active_korzina_modal")
-                            setTimeout(() => {
-                                setKorzinaOverlay(!korzinaOverlay)
-                            },500) 
-                        }}>&times;</button>
-                    </div>
-                </div>
-                </div>
+                <Korzina korzinaOverlay={korzinaOverlay} setKorzinaOverlay={setKorzinaOverlay}/>
                 <div className="burger_private_nav" onClick={handleBurger}>
                     <img style={{filter: headerClass === "header_public_active"? "invert(1)": false}} src={burger === true? Burger: BurgerX} alt="" />
                 </div>

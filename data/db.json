@@ -1,27 +1,35 @@
 {
   "users": [
     {
-      "email": "dostonqudratov@gmail.com",
-      "password": "$2a$10$oDGcuDhJAuqqnXWRkrHDle/t6B8uAVTadiZzjPcG2kohq25AWJyBy",
-      "name": "Doston",
-      "lastname": "Qudratov",
-      "date": "28.03.2023-23-31 Register At",
-      "id": 2
-    },
-    {
       "email": "userAdmin@gmail.com",
-      "password": "$2a$10$AsIAA0wYdgWfNtLzFqFhhec9F6rguZBP8BBQjbAzj50SHI0GcMShu",
+      "password": "$2a$10$TaaOSxN/rZl2f73LP5JPQeTTfH.0FZRiE1eL4lA/wZjf52NqePPFy",
       "name": "admin",
-      "lastname": "admin",
-      "date": "02.04.2023-0-5 Register At",
-      "id": 3
+      "lastname": "adminShop",
+      "date": "17.04.2023-22-57 Register At",
+      "id": 1
     },
     {
       "email": "shohijahonmusinkulov@gmail.com",
-      "password": "$2a$10$efIByoa3SFKhafUu1JDCF.DpXKRGMbmOadTZ.StkEvHaoX/7z1hYq",
+      "password": "$2a$10$K4XIcfIQ8G8rh0jLrnHZvuEA47o6/LhX6r9HVX6QcjCebSIhcqlJ2",
       "name": "Shohijahon",
       "lastname": "Musinkulov",
-      "date": "06.04.2023-22-37 Register At",
+      "date": "17.04.2023-22-59 Register At",
+      "id": 2
+    },
+    {
+      "email": "madinaurinbayeva@gmail.com",
+      "password": "$2a$10$LuNoYPwfrjxNEVms7khdG.Lw8M8a2DcxPel5So7HonQRmKsBuksXm",
+      "name": "Madina",
+      "lastname": "Urinbayeva",
+      "date": "17.04.2023-23-3 Register At",
+      "id": 3
+    },
+    {
+      "email": "sevinchmusinkulova@gmail.com",
+      "password": "$2a$10$KcOBxHyJwKF9xTXCoMD6ju5RXRlvd7d61MQ7OjFZYKKgH4jZXrQA.",
+      "name": "Sevinch",
+      "lastname": "Musinkulova",
+      "date": "17.04.2023-23-43 Register At",
       "id": 4
     }
   ],
@@ -29,71 +37,571 @@
   "product": [
     {
       "name": "Futbolka",
-      "disc": "usha gap juda yaxshi kiyilgan",
+      "disc": "usha gap",
       "type": "erkak",
       "image": "https://picsum.photos/200/200",
       "price": 1000,
       "ulcham": "xl",
       "telnumber": 998991457766,
-      "user_id": 4,
+      "user_id": 2,
       "avtor": "Shohijahon Musinkulov",
-      "date": "11.04.2023-23:47 Create-At it's product",
-      "id": 2
+      "date": "17.04.2023-23:0 Create-At it's product",
+      "id": 1
     },
     {
-      "name": "Bryuk",
+      "name": "Shortik",
       "disc": "usha gap",
       "type": "erkak",
       "image": "https://picsum.photos/200/200",
       "price": 1000,
       "ulcham": "xs",
       "telnumber": 998991457766,
-      "user_id": 4,
+      "user_id": 2,
       "avtor": "Shohijahon Musinkulov",
-      "date": "16.04.2023-11:47 Create-At it's product",
-      "id": 3
+      "date": "17.04.2023-23:1 Create-At it's product",
+      "id": 2
     },
     {
-      "name": "Aziz",
-      "disc": "usha gap",
-      "type": "erkak",
-      "image": "https://picsum.photos/200/200",
-      "price": 1,
-      "ulcham": "xxl",
-      "telnumber": 99877665544,
-      "user_id": 4,
-      "avtor": "Shohijahon Musinkulov",
-      "date": "16.04.2023-12:41 Create-At it's product",
-      "id": 4
-    },
-    {
-      "name": "Doston",
+      "name": "Kiyim",
       "disc": "usha gap",
       "type": "ayol",
       "image": "https://picsum.photos/200/200",
       "price": 1000,
       "ulcham": "s",
-      "telnumber": 998996785544,
-      "user_id": 2,
-      "avtor": "Doston Qudratov",
-      "date": "16.04.2023-15:9 Create-At it's product",
-      "id": 5
+      "telnumber": 998991457766,
+      "user_id": 3,
+      "avtor": "Madina Urinbayeva",
+      "date": "17.04.2023-23:3 Create-At it's product",
+      "id": 3
     },
     {
-      "name": "Ayol",
-      "disc": "yana usha gap",
+      "name": "Futbolka",
+      "disc": "usha gap",
       "type": "ayol",
       "image": "https://picsum.photos/200/200",
       "price": 1000,
-      "ulcham": "xl",
-      "telnumber": 998991456677,
-      "user_id": 2,
-      "avtor": "Doston Qudratov",
-      "date": "16.04.2023-15:33 Create-At it's product",
-      "id": 6
+      "ulcham": "xs",
+      "telnumber": 998991457766,
+      "user_id": 4,
+      "avtor": "Sevinch Musinkulova",
+      "date": "17.04.2023-23:43 Create-At it's product",
+      "id": 5
     }
   ],
-  "order": [],
+  "order": [
+    {
+      "card_number": "1234567890123",
+      "avtor": "Shohijahon Musinkulov",
+      "tovar": [
+        {
+          "name": "Futbolka",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "xs",
+          "telnumber": 998991457766,
+          "user_id": 4,
+          "avtor": "Sevinch Musinkulova",
+          "date": "17.04.2023-23:43 Create-At it's product",
+          "id": 5,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "user_id": 2,
+      "date": "21.04.2023-12:37 Harid qilindi",
+      "id": 1
+    },
+    {
+      "card_number": "1234567890123",
+      "avtor": "Shohijahon Musinkulov",
+      "tovar": [
+        {
+          "name": "Futbolka",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "xs",
+          "telnumber": 998991457766,
+          "user_id": 4,
+          "avtor": "Sevinch Musinkulova",
+          "date": "17.04.2023-23:43 Create-At it's product",
+          "id": 5,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "user_id": 2,
+      "date": "21.04.2023-12:38 Harid qilindi",
+      "id": 2
+    },
+    {
+      "card_number": "1234567890123",
+      "avtor": "Shohijahon Musinkulov",
+      "tovar": [
+        {
+          "name": "Futbolka",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "xs",
+          "telnumber": 998991457766,
+          "user_id": 4,
+          "avtor": "Sevinch Musinkulova",
+          "date": "17.04.2023-23:43 Create-At it's product",
+          "id": 5,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "user_id": 2,
+      "date": "21.04.2023-12:47 Harid qilindi",
+      "id": 3
+    },
+    {
+      "card_number": "1234567890123",
+      "avtor": "Shohijahon Musinkulov",
+      "tovar": [
+        {
+          "name": "Futbolka",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "xs",
+          "telnumber": 998991457766,
+          "user_id": 4,
+          "avtor": "Sevinch Musinkulova",
+          "date": "17.04.2023-23:43 Create-At it's product",
+          "id": 5,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "user_id": 2,
+      "date": "21.04.2023-12:50 Harid qilindi",
+      "id": 4
+    },
+    {
+      "card_number": "1234567890123",
+      "avtor": "Shohijahon Musinkulov",
+      "tovar": [
+        {
+          "name": "Kiyim",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "s",
+          "telnumber": 998991457766,
+          "user_id": 3,
+          "avtor": "Madina Urinbayeva",
+          "date": "17.04.2023-23:3 Create-At it's product",
+          "id": 3,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "user_id": 2,
+      "date": "21.04.2023-12:50 Harid qilindi",
+      "id": 5
+    },
+    {
+      "card_number": "1234567890123",
+      "avtor": "Shohijahon Musinkulov",
+      "tovar": [
+        {
+          "name": "Futbolka",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "xs",
+          "telnumber": 998991457766,
+          "user_id": 4,
+          "avtor": "Sevinch Musinkulova",
+          "date": "17.04.2023-23:43 Create-At it's product",
+          "id": 5,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "user_id": 2,
+      "date": "21.04.2023-12:55 Harid qilindi",
+      "id": 6
+    },
+    {
+      "card_number": "1234567890123",
+      "avtor": "Shohijahon Musinkulov",
+      "tovar": [
+        {
+          "name": "Kiyim",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "s",
+          "telnumber": 998991457766,
+          "user_id": 3,
+          "avtor": "Madina Urinbayeva",
+          "date": "17.04.2023-23:3 Create-At it's product",
+          "id": 3,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "user_id": 2,
+      "date": "21.04.2023-12:55 Harid qilindi",
+      "id": 7
+    },
+    {
+      "card_number": "1234567890123",
+      "avtor": "Shohijahon Musinkulov",
+      "tovar": [
+        {
+          "name": "Futbolka",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "xs",
+          "telnumber": 998991457766,
+          "user_id": 4,
+          "avtor": "Sevinch Musinkulova",
+          "date": "17.04.2023-23:43 Create-At it's product",
+          "id": 5,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "user_id": 2,
+      "date": "21.04.2023-12:57 Harid qilindi",
+      "id": 8
+    },
+    {
+      "card_number": "1234567890123",
+      "avtor": "Shohijahon Musinkulov",
+      "tovar": [
+        {
+          "name": "Kiyim",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "s",
+          "telnumber": 998991457766,
+          "user_id": 3,
+          "avtor": "Madina Urinbayeva",
+          "date": "17.04.2023-23:3 Create-At it's product",
+          "id": 3,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "user_id": 2,
+      "date": "21.04.2023-12:57 Harid qilindi",
+      "id": 9
+    },
+    {
+      "card_number": "1234567890123",
+      "avtor": "Shohijahon Musinkulov",
+      "tovar": [
+        {
+          "name": "Futbolka",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "xs",
+          "telnumber": 998991457766,
+          "user_id": 4,
+          "avtor": "Sevinch Musinkulova",
+          "date": "17.04.2023-23:43 Create-At it's product",
+          "id": 5,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "user_id": 2,
+      "date": "21.04.2023-12:59 Harid qilindi",
+      "id": 10
+    },
+    {
+      "card_number": "1234567890123",
+      "avtor": "Shohijahon Musinkulov",
+      "tovar": [
+        {
+          "name": "Kiyim",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "s",
+          "telnumber": 998991457766,
+          "user_id": 3,
+          "avtor": "Madina Urinbayeva",
+          "date": "17.04.2023-23:3 Create-At it's product",
+          "id": 3,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "user_id": 2,
+      "date": "21.04.2023-12:59 Harid qilindi",
+      "id": 11
+    },
+    {
+      "card_number": "1234567890123",
+      "avtor": "Shohijahon Musinkulov",
+      "tovar": [
+        {
+          "name": "Futbolka",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "xs",
+          "telnumber": 998991457766,
+          "user_id": 4,
+          "avtor": "Sevinch Musinkulova",
+          "date": "17.04.2023-23:43 Create-At it's product",
+          "id": 5,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "user_id": 2,
+      "date": "23.04.2023-23:27 Harid qilindi",
+      "id": 12
+    },
+    {
+      "card_number": "1234567890123",
+      "avtor": "Shohijahon Musinkulov",
+      "tovar": [
+        {
+          "name": "Kiyim",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "s",
+          "telnumber": 998991457766,
+          "user_id": 3,
+          "avtor": "Madina Urinbayeva",
+          "date": "17.04.2023-23:3 Create-At it's product",
+          "id": 3,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "user_id": 2,
+      "date": "23.04.2023-23:27 Harid qilindi",
+      "id": 13
+    },
+    {
+      "card_number": "1234567890123",
+      "avtor": "Shohijahon Musinkulov",
+      "tovar": [
+        {
+          "name": "Futbolka",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "xs",
+          "telnumber": 998991457766,
+          "user_id": 4,
+          "avtor": "Sevinch Musinkulova",
+          "date": "17.04.2023-23:43 Create-At it's product",
+          "id": 5,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "user_id": 2,
+      "date": "23.04.2023-23:28 Harid qilindi",
+      "id": 14
+    },
+    {
+      "card_number": "1234567890123",
+      "avtor": "Shohijahon Musinkulov",
+      "tovar": [
+        {
+          "name": "Kiyim",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "s",
+          "telnumber": 998991457766,
+          "user_id": 3,
+          "avtor": "Madina Urinbayeva",
+          "date": "17.04.2023-23:3 Create-At it's product",
+          "id": 3,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "user_id": 2,
+      "date": "23.04.2023-23:29 Harid qilindi",
+      "id": 15
+    },
+    {
+      "card": "122",
+      "user": "Shohijahon Musinkulov",
+      "tovars": [
+        {
+          "name": "Kiyim",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "s",
+          "telnumber": 998991457766,
+          "user_id": 3,
+          "avtor": "Madina Urinbayeva",
+          "date": "17.04.2023-23:3 Create-At it's product",
+          "id": 3,
+          "quantity": 1,
+          "itemTotal": 1000
+        },
+        {
+          "name": "Futbolka",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "xs",
+          "telnumber": 998991457766,
+          "user_id": 4,
+          "avtor": "Sevinch Musinkulova",
+          "date": "17.04.2023-23:43 Create-At it's product",
+          "id": 5,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "date": "function toLocaleDateString() { [native code] }-0:19 Harid qilindi",
+      "id": 16
+    },
+    {
+      "card": "122",
+      "user": "Shohijahon Musinkulov",
+      "tovars": [
+        {
+          "name": "Kiyim",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "s",
+          "telnumber": 998991457766,
+          "user_id": 3,
+          "avtor": "Madina Urinbayeva",
+          "date": "17.04.2023-23:3 Create-At it's product",
+          "id": 3,
+          "quantity": 1,
+          "itemTotal": 1000
+        },
+        {
+          "name": "Futbolka",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "xs",
+          "telnumber": 998991457766,
+          "user_id": 4,
+          "avtor": "Sevinch Musinkulova",
+          "date": "17.04.2023-23:43 Create-At it's product",
+          "id": 5,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "date": "function toLocaleDateString() { [native code] }-0:19 Harid qilindi",
+      "id": 17
+    },
+    {
+      "card": "1234567890123",
+      "user": "Shohijahon Musinkulov",
+      "tovars": [
+        {
+          "name": "Kiyim",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "s",
+          "telnumber": 998991457766,
+          "user_id": 3,
+          "avtor": "Madina Urinbayeva",
+          "date": "17.04.2023-23:3 Create-At it's product",
+          "id": 3,
+          "quantity": 1,
+          "itemTotal": 1000
+        },
+        {
+          "name": "Futbolka",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "xs",
+          "telnumber": 998991457766,
+          "user_id": 4,
+          "avtor": "Sevinch Musinkulova",
+          "date": "17.04.2023-23:43 Create-At it's product",
+          "id": 5,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "date": "function toLocaleDateString() { [native code] }-0:20 Harid qilindi",
+      "id": 18
+    },
+    {
+      "card": "1234567890123",
+      "user": "Shohijahon Musinkulov",
+      "tovars": [
+        {
+          "name": "Kiyim",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "s",
+          "telnumber": 998991457766,
+          "user_id": 3,
+          "avtor": "Madina Urinbayeva",
+          "date": "17.04.2023-23:3 Create-At it's product",
+          "id": 3,
+          "quantity": 1,
+          "itemTotal": 1000
+        },
+        {
+          "name": "Futbolka",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "xs",
+          "telnumber": 998991457766,
+          "user_id": 4,
+          "avtor": "Sevinch Musinkulova",
+          "date": "17.04.2023-23:43 Create-At it's product",
+          "id": 5,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "date": "function toLocaleDateString() { [native code] }-0:32 Harid qilindi",
+      "id": 19
+    }
+  ],
   "admins": [],
   "category": {
     "erkak": true,

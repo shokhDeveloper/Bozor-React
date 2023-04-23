@@ -86,7 +86,7 @@ export const Tovar_Page = () => {
                       <A href={`tel:${item.telnumber}`} variant="green">
                         Telefon qilish
                       </A>
-                      <Link className="tovar_page_user" to={`/avtor/${item.id}`}>Avtor {item.avtor.split(" ")[0].toString().charAt(0) + "." + item.avtor.split(" ")[1].toString().charAt(0)} </Link>
+                      <Link className="tovar_page_user" to={`/avtor/${item.user_id}`}>Avtor {item.avtor.split(" ")[0].toString().charAt(0) + "." + item.avtor.split(" ")[1].toString().charAt(0)} </Link>
                     </div>
                   )}
                 </div>
