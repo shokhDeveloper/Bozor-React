@@ -5,6 +5,7 @@ import { useCart } from "react-use-cart";
 import Zvezda from "../../Settings/assets/images/uch_yarim.png";
 import { Btn } from "../../Settings/Styleds";
 import { Cards, Order_Card } from "./Pages";
+
 export const Order = () => {
   const { user } = useContext(Context);
   const { items, cartTotal } = useCart();

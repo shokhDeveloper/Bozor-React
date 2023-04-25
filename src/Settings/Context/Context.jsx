@@ -20,7 +20,7 @@ export const ContextProvider = ({children}) => {
         }
     },[user])
     const language = getItem("lang")
-    const [til, setTil] = useState(language)
+    const [til, setTil] = useState(language ? language : "uz")
     const [data, setData] = useState([])
     return(
         <Provider value={{token, setToken, user, setUser, til, setTil, data, setData}}>

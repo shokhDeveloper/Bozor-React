@@ -600,6 +600,144 @@
       ],
       "date": "function toLocaleDateString() { [native code] }-0:32 Harid qilindi",
       "id": 19
+    },
+    {
+      "card": "1234567890123",
+      "user": "Shohijahon Musinkulov",
+      "tovars": [
+        {
+          "name": "Kiyim",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "s",
+          "telnumber": 998991457766,
+          "user_id": 3,
+          "avtor": "Madina Urinbayeva",
+          "date": "17.04.2023-23:3 Create-At it's product",
+          "id": 3,
+          "quantity": 1,
+          "itemTotal": 1000
+        },
+        {
+          "name": "Futbolka",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "xs",
+          "telnumber": 998991457766,
+          "user_id": 4,
+          "avtor": "Sevinch Musinkulova",
+          "date": "17.04.2023-23:43 Create-At it's product",
+          "id": 5,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "date": "function toLocaleDateString() { [native code] }-14:31 Harid qilindi",
+      "id": 20
+    },
+    {
+      "card": "1234567890123",
+      "user": "Shohijahon Musinkulov",
+      "tovars": [
+        {
+          "name": "Kiyim",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "s",
+          "telnumber": 998991457766,
+          "user_id": 3,
+          "avtor": "Madina Urinbayeva",
+          "date": "17.04.2023-23:3 Create-At it's product",
+          "id": 3,
+          "quantity": 1,
+          "itemTotal": 1000
+        },
+        {
+          "name": "Futbolka",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "xs",
+          "telnumber": 998991457766,
+          "user_id": 4,
+          "avtor": "Sevinch Musinkulova",
+          "date": "17.04.2023-23:43 Create-At it's product",
+          "id": 5,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "date": "function toLocaleDateString() { [native code] }-14:32 Harid qilindi",
+      "id": 21
+    },
+    {
+      "card": "1234567890123",
+      "user": "Shohijahon Musinkulov",
+      "tovars": [
+        {
+          "name": "Kiyim",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "s",
+          "telnumber": 998991457766,
+          "user_id": 3,
+          "avtor": "Madina Urinbayeva",
+          "date": "17.04.2023-23:3 Create-At it's product",
+          "id": 3,
+          "quantity": 1,
+          "itemTotal": 1000
+        },
+        {
+          "name": "Futbolka",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "xs",
+          "telnumber": 998991457766,
+          "user_id": 4,
+          "avtor": "Sevinch Musinkulova",
+          "date": "17.04.2023-23:43 Create-At it's product",
+          "id": 5,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "date": "function toLocaleDateString() { [native code] }-14:33 Harid qilindi",
+      "id": 22
+    },
+    {
+      "card_number": "1234567890123",
+      "avtor": "Shohijahon Musinkulov",
+      "tovar": [
+        {
+          "name": "Futbolka",
+          "disc": "usha gap",
+          "type": "ayol",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "xs",
+          "telnumber": 998991457766,
+          "user_id": 4,
+          "avtor": "Sevinch Musinkulova",
+          "date": "17.04.2023-23:43 Create-At it's product",
+          "id": 5,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "user_id": 2,
+      "date": "25.04.2023-14:39 Harid qilindi",
+      "id": 23
     }
   ],
   "admins": [],

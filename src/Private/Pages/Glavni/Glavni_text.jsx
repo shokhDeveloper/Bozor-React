@@ -3,7 +3,7 @@ import { Modal } from "../../../Settings/Modal"
 import { Btn } from "../../../Settings/Styleds/StyledComponents"
 import { Formik, Form, Field, ErrorMessage } from "formik"
 import * as Yup from "yup";
-import { Context } from "../../../Settings";
+import { Context, Language } from "../../../Settings";
 import { useMutation, useQuery } from "react-query";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -11,7 +11,7 @@ import { useCallback } from "react";
 export const Glavni_Text = () => {
     const date = new Date()
     const [modal, setModal] = useState(!true)
-    const {user} = useContext(Context)
+    const {user, til ,} = useContext(Context)
     const navigate = useNavigate()
     const mutation = useMutation(data => {
         axios({
@@ -62,7 +62,7 @@ export const Glavni_Text = () => {
             <div className="glavni_texts">
                 <div className="glavni_text">
                     <div className="container_fluid">    
-                        <h2 style={{fontFamily: "Bold"}}>Добро пожаловать в шоппнг !</h2>       
+                        <h2 style={{fontFamily: "Bold"}}>{Language[til].glavni_text}</h2>       
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia eos facilis consequatur quis minus architecto illo nemo nulla ipsum error. Incidunt sint blanditiis reprehenderit quisquam fugiat, pariatur quae vitae accusantium modi? Quis veritatis saepe aspernatur quo est quam atque culpa, ipsam sit consectetur cupiditate commodi provident recusandae ut? Fugit reiciendis ducimus cumque quas minus nihil, autem iste ipsam voluptas delectus.</p>
                         <Btn className="elon_btn_1" onClick={() => setModal(!modal) } variant="grey" style={{background: "#fff", marginTop: "1rem"}}>E'lon berish</Btn> 
                     </div>      

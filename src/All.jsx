@@ -13,7 +13,7 @@ import { Context } from "./Settings";
 import { useNavigate } from "react-router-dom";
 export const All = () => {
   const date = new Date()
-  const { items } = useCart();
+  const { items, removeItem } = useCart();
   const {user} = useContext(Context)
   const [modal, setModal] = useState(false)
   const [errorModal, setErrorModal] = useState(false)
@@ -42,6 +42,9 @@ export const All = () => {
       } 
     }).then(response => {
       if(response.status === 201){
+            items.map((item) => {
+                removeItem(item.id)
+            })
            setSuccess(true)
       }
     })

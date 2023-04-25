@@ -1,3 +1,4 @@
+import { useContext } from "react"
 import GlavniImage from "../../../Settings/assets/images/Glavni_img.svg"
 import { Glavni_Footer } from "./Glavni_Footer"
 import { Glavni_Text } from "./Glavni_text"

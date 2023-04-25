@@ -33,6 +33,8 @@
     align-items: center;
     text-align: center;
 }
-
-
-
+@mixin media($max){
+    @media only  screen and (max-width: $max) {
+        @content;
+    }
+}
