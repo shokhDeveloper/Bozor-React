@@ -1,5 +1,5 @@
 import { NavLink, Route, Routes, useNavigate } from "react-router-dom"
-import { Akkaunt_page, Product } from "./Pages"
+import { Akkaunt_page, MyPosts, Product } from "./Pages"
 import { Btn } from "../../../Settings/Styleds"
 import { useContext } from "react"
 import { Context } from "../../../Settings"
@@ -22,6 +22,9 @@ export const Akkaunt = () => {
                 <div className="akkaunt_routes">
                     <NavLink to={"my_accaunt"} className={({isActive}) => isActive ? "active_akkaunt_route": "akkaunt_page"}>Akkaunt</NavLink>
                     <NavLink className={({isActive}) => isActive ? "active_akkaunt_route": "akkaunt_page"} to={"Corsines"}>E'lonlaringiz</NavLink>
+                    <NavLink className={({isActive}) => isActive ? "active_akkaunt_route": "akkaunt_page"} to={"my-posts"}>
+                        Postlaringiz
+                    </NavLink>
                 </div>
                 <Btn onClick={handleOut} variant="grey" style={{position: "relative", textAlign: "start"}}> Akkauntdan chiqib ketish <span style={{position:"absolute", top: "0.5rem"}}><LogoutOutlined/></span></Btn>
                 </div>
@@ -30,6 +33,7 @@ export const Akkaunt = () => {
                         <Route index element={<Akkaunt_page/>}/>
                         <Route path="/my_accaunt" element={<Akkaunt_page/>}/>
                         <Route path="/Corsines" element={<Product/>}/>
+                        <Route path="my-posts" element={<MyPosts/>}/>
                     </Routes>
                 </div>
             </div>

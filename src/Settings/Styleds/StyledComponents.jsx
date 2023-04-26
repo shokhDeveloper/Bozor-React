@@ -46,7 +46,7 @@ export const Btn = styled.button`
     letter-spacing: 1px;
     border: 1px solid transparent;
     font-weight: 600;
-    color: ${({className, variant}) => className === "add_product_korzina" || className === "remove_product_korzina" ? "#fff": btn_settings[variant].color };
+    color: ${({className, variant}) => className === "add_product_korzina" || className === "remove_product_korzina" ? "#fff": className === "my_post_add_btn" ? "#fff":  btn_settings[variant].color };
 `
 export const A = styled.a`
     background: ${({variant}) => btn_settings[variant].background};

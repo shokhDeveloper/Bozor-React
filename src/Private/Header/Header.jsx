@@ -97,6 +97,15 @@ export const Header = () => {
                             }
                         } } className={({isActive}) => isActive? "active_page": "page" } to={"/Akkaunt"}>Hастройка аккаунта</NavLink>
                     </li>
+                    <li>
+                        <NavLink onClick={() => {
+                            if(matches === true){
+                                setBurger(!burger)
+                            }
+                        }} className={({isActive}) => isActive ?"active_page": "page" } to={"/posts"}>
+                            Fikrlar
+                        </NavLink>
+                    </li>
                 </ul>
                 <div className="korzina" onClick={handleClick}>
                     <p className="korzina_number"><small>{totalItems === 0? totalItems: totalItems}</small></p>

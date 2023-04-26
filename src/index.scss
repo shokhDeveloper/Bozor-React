@@ -921,7 +921,7 @@ footer{
     width: 100%;
 }
 .akkaunt_routes{
-    width: 20%;
+    width: 35%;
     @include between;
 }
 .akkaunt_routes .akkaunt_page{
@@ -1653,4 +1653,50 @@ footer{
     .onas_iframe_align{
         grid-template-columns: repeat(1, 100%);
     }
+}
+.posts{
+    width: 100%;
+    height: auto;
+}
+.posts_texts{
+    text-align: center;
+}
+.posts_texts h2{
+    font-size: 35px;
+    text-decoration: underline;
+}
+.posts_texts p{
+    padding-top: 0.5rem;
+}
+.posts_align{
+    padding-top: 1rem;
+    display: grid;
+    grid-template: repeat(1, auto) / repeat(3, 33%);
+    grid-row-gap: 20px;
+}
+.post{
+    background: $grey_color;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+}
+.post p{
+    padding: 1rem 0rem;
+}
+.post a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+.my_posts{
+    text-align: center;
+}
+.my_posts h2{
+    font-size: 35px;
+    font-family: "Bold";
+}   
+.my_posts .my_post_add_btn{
+    margin-top: 1rem;
 }

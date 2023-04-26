@@ -33,7 +33,16 @@
       "id": 4
     }
   ],
-  "posts": [],
+  "posts": [
+    {
+      "title": "Yaxshi",
+      "body": "Ammo o'zimni baribir ko'nglim to'lmayapti",
+      "date": "26.04.2023-19:38 Post qo'shildi",
+      "avtor": "Shohijahon  Musinkulov",
+      "user_id": 2,
+      "id": 1
+    }
+  ],
   "product": [
     {
       "name": "Futbolka",
