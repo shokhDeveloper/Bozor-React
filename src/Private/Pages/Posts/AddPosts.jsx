@@ -6,7 +6,7 @@ import { useMutation } from "react-query";
 import axios from "axios";
 import { useContext } from "react";
 import { Context } from "../../../Settings";
-export const AddPosts = ({modal, setModal}) => {
+export const AddPosts = ({modal, setModal, getMyTovar}) => {
     const date = new Date()
     const {user} = useContext(Context)
     const {name, lastname, id} = user
@@ -27,6 +27,7 @@ export const AddPosts = ({modal, setModal}) => {
         axios.post(`http://localhost:1111/posts`, {...data, date: `${date.toLocaleDateString()}-${date.getHours()}:${date.getMinutes()} Post qo'shildi`, avtor: `${name}  ${lastname}`, user_id: id }  ).then(response => {
             if(response.status === 201){
                 setModal(!modal)
+                getMyTovar()
             }
         }).catch( error => {
             return error

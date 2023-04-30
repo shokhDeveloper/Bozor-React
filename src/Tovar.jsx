@@ -95,10 +95,14 @@ export const Tovar = ({name, image, disc, price, user_id, id, ulcham, type, teln
             {user_id === user.id ? (
                 <p >Sizning tovaringiz </p>    
             ):(
-            <div className="add_korzina_tovar_card">
+                <>
+                <p>{item.avtor.split(" ")[0]}.{item.avtor.split(" ")[1][0]} </p> 
+                <div className="add_korzina_tovar_card">
+                
                 <Btn variant="green" onClick={() => cart.addItem(item, 1)} className="add_korzina_tovar_card_btn">Korzinaga qo'shish <ShopOutlined style={{fontSize: "1em"}}/> </Btn>
                 <NavLink to={`/tovar/${id}`}>Batafsil</NavLink>
             </div>
+                </>
             )}
             {user_id === user.id ? (
                 <div className="tovar_btns">

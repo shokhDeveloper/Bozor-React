@@ -887,7 +887,7 @@ footer{
     width: 30%;
     margin: 0 auto;
 }
-.modal form label input{
+.modal form label input, .order_card_form form input{
     padding: 0.5rem 1rem;
     border: 1px solid transparent;
     background: #fff;
@@ -921,7 +921,7 @@ footer{
     width: 100%;
 }
 .akkaunt_routes{
-    width: 35%;
+    width: 100%;
     @include between;
 }
 .akkaunt_routes .akkaunt_page{
@@ -979,18 +979,43 @@ footer{
 }
 .my_products {
     width: 100%;
-    @include between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: repeat(1, auto);
+    grid-template-columns: repeat(3, 33%);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
     border-radius: 1px solid black;
 }
 .tovar_page .tovar_page_tovars{
     width: 100%;
     height: auto;
-    @include between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template: repeat(1, auto) / repeat(3, 30%);
+    justify-content: space-between;
 }
-.my_products .tovar, .tovar_page_tovars .tovar, .erkaklar_align .tovar, .ayollar_align .tovar, .user_tovars .tovar{
+.my_products .tovar{
+    width: 100%;
+    background: $grey_color;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+ .erkaklar_align .tovar, .ayollar_align .tovar{
     width: 25%;
+    background: $grey_color;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+
+.tovar_page_tovars .tovar{
+    width: 100%;
     background: $grey_color;
     padding: 1rem;
     border-radius: 8px;
@@ -1002,10 +1027,13 @@ footer{
 .user_tovars .tovar{
     width: 45%;
 }
-.my_products .tovar img, .tovar_page_tovars .tovar img, .erkaklar_align .tovar img, .ayollar_align .tovar img, .user_tovars .tovar img{
+ .tovar_page_tovars .tovar img, .erkaklar_align .tovar img, .ayollar_align .tovar img, .user_tovars .tovar img{
     width: 100%;
 }
-
+.my_products .tovar img{
+    width: 75%;
+    margin: 0 auto;
+}
 .my_products .tovar p:nth-child(1), .tovar_page_tovars .tovar p:nth-child(1), .erkaklar_align .tovar p:nth-child(1), .ayollar_align .tovar p:nth-child(1), .user_tovars .tovar p:nth-child(1){
     font-size: 20px;
     font-family: "Bold";
@@ -1025,8 +1053,14 @@ footer{
     @include around;
 }
 .akkaunt_route_align{
-    display: flex;
+    display: grid;
+    grid-template: repeat(1, auto) / 50%  25%;
     justify-content: space-between;
+}
+
+.erkaklar_align, .ayollar_align{
+    display: grid;
+    grid-template: repeat(1, auto) / repeat(3, 33%);    
 }
 .tovar_page_align{
     display: grid;
@@ -1269,11 +1303,7 @@ footer{
 .erkaklar_page h2{
     padding-bottom: 1rem
 }
-.erkaklar_search{
-    @include between;
-}
 .erkaklar_search input, .ayollar_search_input{
-    width: auto;    
     flex-basis: 30%;
     margin-top: 1.5rem;
     font-size: 18px;
@@ -1342,8 +1372,11 @@ footer{
     letter-spacing: 1px;
 }
 .user_tovars{
-    @include between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: repeat(1, auto);
+    grid-template-columns: repeat(3, 30%);
+    grid-row-gap: 10px;
+    justify-content: space-between;    
 }
 .user_tovars .tovar{
     width: 25%;
@@ -1668,11 +1701,13 @@ footer{
 .posts_texts p{
     padding-top: 0.5rem;
 }
-.posts_align{
+.posts_align, .my_posts_align, .posts_align{
     padding-top: 1rem;
     display: grid;
     grid-template: repeat(1, auto) / repeat(3, 33%);
     grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    justify-content: space-between;
 }
 .post{
     background: $grey_color;
@@ -1691,6 +1726,7 @@ footer{
     font-size: 17px;
 }
 .my_posts{
+    width: 100%;
     text-align: center;
 }
 .my_posts h2{
@@ -1699,4 +1735,427 @@ footer{
 }   
 .my_posts .my_post_add_btn{
     margin-top: 1rem;
+}
+@include media(1300px){
+    .modal form label{
+        display: block;
+        padding: 0.5rem 0rem;
+        width: 40%;
+        margin: 0 auto;
+    }
+    .modal form label input{
+        padding: 0.5rem 1rem;
+        border: 1px solid transparent;
+        background: #fff;
+        outline: 1px solid transparent;
+        width: 100%;
+    }
+    .modal form label select,.modal form label textarea, .kategory_select {
+        padding: 0.5rem 1rem;
+        border: 1px solid transparent;
+        background: #fff;
+        outline: 1px solid transparent;
+        width: 100%;
+    
+    }
+}
+@include media(1042px){
+    .modal{
+        width: 60%;
+    }
+    .modal form label{
+        width: 50%;
+    }
+}
+@include media(800px){
+    .modal{
+        width: 70%;
+    }
+}
+@include media(570px){
+    .modal{
+        width: 80%;
+    }
+}
+@include media(461px){
+    .modal{
+        width: 85%;
+    }
+}
+@include media(421px){
+    .modal{
+        width: 90%;
+    }
+    .modal form input{
+        font-size: 0.8rem;
+    }
+}
+@include media(1300px){
+    .kategory_routes{
+        margin-top: 1rem;
+    }
+    .kategory_route {
+        flex-basis: 100%;
+        margin: 0 auto;
+        @include around;
+    }
+    .kategory_align{
+        padding-top: 1rem;
+    }
+    .kategory_align .erkaklar_page{
+        text-align: center;
+    }
+}
+.erkaklar_search{
+    display: grid;
+    grid-template: repeat(1, auto) / repeat(3, 33%);
+    align-items: center;
+    grid-column-gap: 10px;
+    justify-content: center;
+}
+.erkaklar_search select{
+    position: relative;
+    top: 0.3rem;
+}
+@include media(1080px){
+    .erkaklar_search, .ayollar_search{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        justify-content: center;
+        text-align: center;
+    }
+    .erkaklar_align , .ayollar_align{
+        display: grid;
+        grid-template: repeat(1, auto) / repeat(2, 35%);
+        grid-row-gap: 10px;
+    }
+    .erkaklar_align .tovar, .ayollar_align .tovar{
+        width: 100%;
+    }
+    .erkaklar_align .tovar:nth-child(1),     .ayollar_align .tovar:nth-child(1){
+        margin-top: 1rem;
+    }
+}
+@include media(745px){
+    .erkaklar_search, .ayollar_search{
+        grid-template-columns: repeat(1, 100%);
+        grid-row-gap: 10px;
+    }
+    .erkaklar_search input, .ayollar_search input{
+        margin: 0;
+    }
+    .erkaklar_search select, .ayollar_search select{
+        position: inherit;
+        top: 0;
+    }
+    
+}
+@include media(651px){
+    .erkaklar_align , .ayollar_align{
+        grid-template-columns: repeat(1, 100%);
+        
+    }
+    .erkaklar_align .tovar, .ayollar_align .tovar{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+@include media(560px){
+    .erkaklar_align .tovar , .ayollar_align .tovar{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+@include media(440px){
+    .erkaklar_align .tovar, .ayollar_align .tovar{
+        width: 70%;
+    }
+}
+@include media(370px){
+    .erkaklar_align .tovar, .ayollar_align .tovar{
+        width: 80%;
+    }
+}
+@include media(1350px){
+    .akkaunt_route_align{
+        grid-template: repeat(1, auto) / repeat(1, 100%);
+        position: relative;
+    }   
+    .akkaunt_route_align button{
+        position: absolute;
+        width: 30%;
+        margin: 1rem auto; 
+    }
+}
+@include media(1171px){
+    .akkaunt_route_align button{
+        font-size: 16px;
+    }
+    .akkaunt_route_align button span{
+        font-size: 1em;
+    }
+}
+@include media(1000px){
+    .akkaunt_route_align button{
+        font-size: 17px;
+        display: flex;
+        text-align: center;
+        width: 40%;
+        
+    }
+    .akkaunt_route_align button span{
+        display: none;
+    }
+}
+@include media(791px){
+    .akkaunt_route_align button{
+        font-size: 15px;
+    }
+    .akkaunt_routes .akkaunt_page{
+        font-size: 18px;
+    }
+}
+@include media(722px){
+    .akkaunt_route_align button{
+        width: 50%;
+    }
+}
+@include media(580px){
+    .akkaunt_route_align button{
+        width: 60%;
+    }
+}
+@include media(486px){
+    .akkaunt_routes .akkaunt_page, .akkaunt_routes .active_akkaunt_route {
+        font-size: 16px;
+    }
+    .akkaunt_route_align button{
+        width: 70%;
+    }
+}
+@include media(1290px){
+    .my_products, .posts_align {
+        grid-template-columns: repeat(2, 40%);
+        justify-content: space-around;
+    }
+}
+@include media(800px){
+    .my_products, .posts_align{
+        grid-template-columns: repeat(1, 60%);
+    }    
+    .my_product h2{
+        font-size: 25px;
+    }
+}
+@include media(1280px){
+    .my_posts_align , .posts_align{
+        grid-template-columns: repeat(2, 40%);
+        justify-content: space-between;
+    }
+}
+@include media(730px){
+    .my_posts_align , .posts_align{
+        grid-template-columns: repeat(1, 70%);
+        justify-content: center; 
+    }
+}
+@include media(520px){
+    .my_posts_align , .posts_align{
+        grid-template-columns: repeat(1, 80%);
+        justify-content: center; 
+    }
+}
+@include media(430px){
+    .my_posts_align, .posts_align{
+        grid-template-columns: repeat(1, 90%);    
+    }
+}
+@include media(1150px){
+    .tovar_page_align{
+        grid-template-columns: repeat(1, 70%);
+        grid-row-gap: 40px;
+    }
+    .tovar_page_align .tovar_page_image img{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .tovar_page_align .tovar_page_text p,     .tovar_page_align .tovar_page_text h3 {
+        padding: 1rem 0rem;
+    }
+}
+@include media(750px){
+    .tovar_page_align{
+        grid-template-columns: repeat(1, 80%);
+    }
+}
+@include media(560px){
+    .tovar_page_align{
+        grid-template-columns: repeat(1, 90%);
+    }
+}
+@include media(450px){
+    .tovar_page_align div:nth-child(3) h2{
+        font-size: 17px;
+    }
+}
+@include media(410px){
+    .tovar_page_align div:nth-child(3) img{
+        display: none;
+    }
+}
+@include media(1160px){
+    .tovar_page  .tovar_page_tovars{
+        grid-template-columns: repeat(2, 40%);
+    }
+}
+@include media(866px){
+    .tovar_page  .tovar_page_tovars{
+        grid-template-columns: repeat(1, 60%);
+        justify-content: center;
+    }
+}
+@include media(596px){
+    .tovar_page  .tovar_page_tovars{
+        grid-template-columns: repeat(1, 70%);
+        justify-content: center;
+    }
+}
+@include media(505px){
+    .tovar_page  .tovar_page_tovars{
+        grid-template-columns: repeat(1, 80%);
+        justify-content: center;
+    }
+}
+.user_tovars .tovar{
+    width: 100%;
+    background: $grey_color;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+@include media(1070px){
+    .user_tovars{
+        grid-template-columns: repeat(2, 40%);
+    }
+}
+@include media(865px){
+    .user_tovars{
+        grid-template-columns: repeat(1, 50%);
+        justify-content: center;
+    }
+}
+@include media(865px){
+    .user_tovars{
+        grid-template-columns: repeat(1, 60%);
+    }
+}
+@include media(590px){
+    .user_tovars{
+        grid-template-columns: repeat(1, 70%);
+    }
+}
+@include media(520px){
+    .user_tovars{
+        grid-template-columns: repeat(1, 80%);
+    }
+}
+@include media(545px){
+    .user_name_text h1{
+        font-size: 25px;
+    }
+}
+@include media(536px){
+    .user_text p{
+        font-size: 16px;
+    }
+}
+@include media(486px){
+    .user_text p{
+        font-size: 14px;
+    }
+    .user_text a{
+        font-size: 14px;
+    }
+}
+@include media(436px){
+    .user_name_text h1{
+        font-size: 21px;
+    }
+}
+@include media(447px){
+    .user_tovars{
+        grid-template-columns: repeat(1, 90%);
+    }
+}
+@include media(397px){
+    .user_tovars{
+        grid-template-columns: repeat(1, 100%);
+    }
+}
+.order_card_form{
+    margin-top: 1rem;
+    background: $grey_color;
+    padding: 1rem;
+}
+.order_card_form form label p{
+    font-size: 20px;
+    padding-bottom: 1rem;
+}
+.order_card_form form {
+    width: 50%;
+    margin: 0 auto;
+}
+.order_card_form form button{
+    margin-top: 1rem;
+}
+.surov_cards_routes{
+    margin-top: 1rem;
+    display: grid;
+    grid-template: repeat(1, auto) / repeat(2, 50%);
+    justify-content: space-between;
+}
+.order_one_korzina{
+    display: grid;
+    grid-template: repeat(1, auto) / repeat(2, 50%);
+    justify-content: space-between;
+}
+.tovar_orders{
+    display: grid;
+    grid-template: repeat(1, auto) / repeat(2, 50%);
+    grid-column-gap: 10px;
+}
+.tovar_orders .order_card{
+    width: 100%;
+}
+.tovar_orders .order_card img{
+    width: 100%;
+}
+.tovar_orders .order_card div:nth-child(3) img{
+    width: 40%;   
+}
+.tovar_orders .order_user{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.tovar_orders .order_user h1{
+    font-size: 24px;
+}
+.tovar_orders .order_user input{
+    background: $grey_color;
+}
+.order_card div{
+    padding: 1rem 0rem;
+}
+.order_all{
+    background: #fff;
+}
+.order_all h3{
+    padding: 1rem 0rem;
+}
+.order_all form label input{
+    background: $grey_color;
 }

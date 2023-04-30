@@ -44,7 +44,7 @@ export const Erkaklar = () => {
                 <h2>Erkaklar kiyimlari</h2>
                 <div className="erkaklar_search">
                 <input onKeyUp={handleChange} id="erkak_search" type="text" placeholder="Qidirish" className="erkaklar_seach_input" />
-                <select onChange={handleChange} id="erkak_filter" defaultValue={"filter"} className="kategory_select">
+                <select onChange={handleChange} style={{background: "rgba(0, 0, 0, 0.05)"}} id="erkak_filter" defaultValue={"filter"} className="kategory_select">
                         <option selected disabled value="filter">Filter</option>
                         <option value="xl">XL</option>
                         <option value="xxl">XXL</option>

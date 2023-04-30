@@ -62,7 +62,6 @@ export const Cards = () => {
                   <NavLink to={`/avtor/${item.user_id}`}>Avtor</NavLink>
                 </div>
               </div>
-
               ))}
             </Slider>
           {items.length >= 1 ? 

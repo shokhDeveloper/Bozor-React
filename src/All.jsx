@@ -74,7 +74,7 @@ export const All = () => {
     }
   }, [success])
   return (
-    <div>
+    <div className="order_all">
       <img src={Humo} alt="" />
       <img src={UzCard} alt="" />
       {items?.map((item) => {

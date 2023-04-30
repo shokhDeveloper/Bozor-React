@@ -41,6 +41,15 @@
       "avtor": "Shohijahon  Musinkulov",
       "user_id": 2,
       "id": 1
+    },
+    {
+      "title": "Ronaldo",
+      "body": "Ronaldo",
+      "avtor": "Shohijahon  Musinkulov",
+      "user_id": 2,
+      "date": "27.04.2023-0:40 Yangilandi",
+      "status": "published",
+      "id": 2
     }
   ],
   "product": [
@@ -56,19 +65,6 @@
       "avtor": "Shohijahon Musinkulov",
       "date": "17.04.2023-23:0 Create-At it's product",
       "id": 1
-    },
-    {
-      "name": "Shortik",
-      "disc": "usha gap",
-      "type": "erkak",
-      "image": "https://picsum.photos/200/200",
-      "price": 1000,
-      "ulcham": "xs",
-      "telnumber": 998991457766,
-      "user_id": 2,
-      "avtor": "Shohijahon Musinkulov",
-      "date": "17.04.2023-23:1 Create-At it's product",
-      "id": 2
     },
     {
       "name": "Kiyim",
@@ -95,6 +91,45 @@
       "avtor": "Sevinch Musinkulova",
       "date": "17.04.2023-23:43 Create-At it's product",
       "id": 5
+    },
+    {
+      "name": "Usha gap",
+      "disc": "leo messi",
+      "type": "ayol",
+      "image": "https://picsum.photos/200/200",
+      "price": 1000,
+      "ulcham": "s",
+      "telnumber": 998665554433,
+      "user_id": 2,
+      "avtor": "Shohijahon Musinkulov",
+      "date": "27.04.2023-21:26 Create-At it's product",
+      "id": 6
+    },
+    {
+      "name": "Messi",
+      "disc": "ushagap",
+      "type": "erkak",
+      "image": "https://picsum.photos/200/200",
+      "price": 1000,
+      "ulcham": "l",
+      "telnumber": 998786654323,
+      "user_id": 2,
+      "avtor": "Shohijahon Musinkulov",
+      "date": "27.04.2023-21:28 Create-At it's product",
+      "id": 7
+    },
+    {
+      "name": "Ronaldo",
+      "disc": "ushafao",
+      "type": "erkak",
+      "image": "https://picsum.photos/200/200",
+      "price": 1000,
+      "ulcham": "3xl",
+      "telnumber": 9975654427,
+      "user_id": 2,
+      "avtor": "Shohijahon Musinkulov",
+      "date": "27.04.2023-21:29 Create-At it's product",
+      "id": 8
     }
   ],
   "order": [
@@ -747,6 +782,68 @@
       "user_id": 2,
       "date": "25.04.2023-14:39 Harid qilindi",
       "id": 23
+    },
+    {
+      "card_number": "1234567890123",
+      "avtor": "Sevinch Musinkulova",
+      "tovar": [
+        {
+          "name": "Messi",
+          "disc": "ushagap",
+          "type": "erkak",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "l",
+          "telnumber": 998786654323,
+          "user_id": 2,
+          "avtor": "Shohijahon Musinkulov",
+          "date": "27.04.2023-21:28 Create-At it's product",
+          "id": 7,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "user_id": 4,
+      "date": "30.04.2023-12:47 Harid qilindi",
+      "id": 24
+    },
+    {
+      "card": "1234567890123",
+      "user": "Sevinch Musinkulova",
+      "tovars": [
+        {
+          "name": "Ronaldo",
+          "disc": "ushafao",
+          "type": "erkak",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "3xl",
+          "telnumber": 9975654427,
+          "user_id": 2,
+          "avtor": "Shohijahon Musinkulov",
+          "date": "27.04.2023-21:29 Create-At it's product",
+          "id": 8,
+          "quantity": 1,
+          "itemTotal": 1000
+        },
+        {
+          "name": "Messi",
+          "disc": "ushagap",
+          "type": "erkak",
+          "image": "https://picsum.photos/200/200",
+          "price": 1000,
+          "ulcham": "l",
+          "telnumber": 998786654323,
+          "user_id": 2,
+          "avtor": "Shohijahon Musinkulov",
+          "date": "27.04.2023-21:28 Create-At it's product",
+          "id": 7,
+          "quantity": 1,
+          "itemTotal": 1000
+        }
+      ],
+      "date": "function toLocaleDateString() { [native code] }-12:56 Harid qilindi",
+      "id": 25
     }
   ],
   "admins": [],

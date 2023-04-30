@@ -7,6 +7,7 @@ import { Surov } from "./Surov";
 import { Bittalab } from "./Bittalab";
 import { All } from "../../../All";
 import { One } from "./One";
+import { Btn } from "../../../Settings/Styleds";
 export const Order_Card = () => {
     const date = new Date()
     const [order, setOrder] = useState(false)
@@ -45,7 +46,7 @@ export const Order_Card = () => {
                     <p style={{color: formik?.errors?.date ? "crimson": "black"}}><small>{formik?.errors?.date? formik?.errors?.date: "Tugilgan sanangizni yuboring"}</small></p>
                     <input {...formik.getFieldProps("date")} name="date" id="yosh" type="date" />
                 </label>
-                <button type="submit">Yuborish</button>
+                <Btn variant={"yellow"}>Yuborish</Btn>
             </form>
             {myDate !== null &&
                 <>
